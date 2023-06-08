@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
-import { COLORS, FONT, SIZES } from "../constants";
+import { COLORS, FONT, SIZES } from '../constants';
 
 const styles = StyleSheet.create({
     container: {
-        width: "100%",
+        width: '100%',
     },
     searchTitle: {
         fontFamily: FONT.bold,

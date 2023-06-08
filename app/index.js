@@ -15,12 +15,12 @@ const Home = () => {
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+            <ScreenHeaderBtn iconUrl={icons.menu} dimension='60%' />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn iconUrl={images.logoIcon} dimension="80%" />
+            <ScreenHeaderBtn iconUrl={images.logoIcon} dimension='80%' />
           ),
-          headerTitle: ""
+          headerTitle: ''
         }}
       />
 

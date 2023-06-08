@@ -6,7 +6,7 @@ import { useRouter } from 'expo-router'
 import styles from './welcome.style'
 import { icons, SIZES } from '../../../constants'
 
-const jobTypes = ["Full-time", "Part-time", "Contractor"]
+const jobTypes = ['Full-time', 'Part-time', 'Contractor']
 
 const Welcome = () => {
   const router = useRouter()
@@ -23,7 +23,7 @@ const Welcome = () => {
         <View style={styles.searchWrapper}>
           <TextInput 
             style={styles.searchInput}
-            value=""
+            value=''
             onChange={() => {}}
             placeholder='What are you looking for?'
           />
@@ -52,6 +52,9 @@ const Welcome = () => {
               <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
             </TouchableOpacity>
           )}
+          keyExtractor={item => item}
+          contentContainerStyle={{ columnGap: SIZES.small }}
+          horizontal
         />
       </View>
     </View>
